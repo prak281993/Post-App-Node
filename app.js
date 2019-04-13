@@ -52,7 +52,7 @@ app.use((err, req, res, next) => {
 
 app.use('/images', express.static(path.join(__dirname, 'images')));
 
-mongoose.connect("mongodb+srv://prakhar:admin@cluster0-qejpw.mongodb.net/messages?retryWrites=true", {
+mongoose.connect("connection string", {
     useNewUrlParser: true
 })
     .then(result => {
